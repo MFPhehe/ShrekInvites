@@ -5,8 +5,26 @@
   </head>
   <body>
     <style>
-.button {
-  border: none;
+  /* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+   border: none;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -16,24 +34,22 @@
   cursor: pointer;
 }
 
-.button1 {
+container .button1 {
   background-color: #4CAF50;
   color: white;
-  top: -100px; 
-  left: -1200px;
       } /* Green */
-.button2 {
+container .button2 {
   background-color: #FFFFFF;
   color: black;
-  top: -250px; 
-  left: 235px;
       } /* White */
+    
 </style>
 </head>
 <body>
-      <img src="https://user-images.githubusercontent.com/102492447/160308397-f02bee99-99b6-4ba1-b77d-753c1ebe1f36.png"/>
+  <div class="container">
+  <img src="https://user-images.githubusercontent.com/102492447/160308397-f02bee99-99b6-4ba1-b77d-753c1ebe1f36.png"/>
 <a href="index.html" target="_parent"><button class="button button1">BACK</button></a>
 <a href="https://docs.google.com/spreadsheets/d/1nPIpKylTN7nSfKvlRuFC6g-fdzyqtOj545rGsG2XAwI/edit?usp=sharing" target="_parent"><button class="button button2">SIGN UP HERE</button></a>
-  
+</div>
   </body>
 </html>
