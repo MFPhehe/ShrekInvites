@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YOU'RE INVITED</title>
+    <title>Invitation</title>
   </head>
   <body>
-    <a href="pagetwo.html">CONTINUE</a>
-    <img src="https://user-images.githubusercontent.com/102492447/160307148-92dd27e4-7c0a-4c62-ae06-12e9803cf486.png"/>
+    <style>
+  /* Container needed to position the button. Adjust the width as needed */
+.container {
+  background-color:#4B2D0B;
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .button {
+   border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.container .button1 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #4CAF50;
+  color: white;
+      } /* Green */
+    
+</style>
+</head>
+<body> 
+  <div class="container">
+  <img src="https://user-images.githubusercontent.com/102492447/160307148-92dd27e4-7c0a-4c62-ae06-12e9803cf486.png"/>
+<a href="pagetwo.html" target="_parent"><button class="button button1">CONTINUE</button></a>
+</div>
   </body>
 </html>
